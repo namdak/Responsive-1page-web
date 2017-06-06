@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway'); /*--- Nav Font --*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway'); /*--- Heading Font --*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height:100%;
+	width: 100%;
+}
+/* start nav */
+nav{
+	float: left;
+	padding: 5% 5% 0 0;
+	height: 50px;
+
+}
+nav ul{
+	list-style: none;
+	float: left;
+}
+nav ul li{
+	font-family: 'Raleway', sans-serif;
+	font-size: 120%;
+}
+nav ul li a.amenu{
+	color: #fff;
+	text-decoration: none;
+}
+nav ul li a.amenu:hover{
+	color: #FF8C00;
+	text-decoration: none;
+	font-weight: bold;
+}
+nav ul, nav:active ul{
+	display: none;
+	padding: 8px 0;
+	left: 45px;
+	top: 60px;
+	width: 20%;
+	z-index: 1000;
+}
+nav li{
+	width: 100%;
+	padding:8px 0 10px 7px;
+	margin:0;
+}
+nav:hover ul{
+	display: block;
+	position: absolute;
+}
+#menu-icon{
+	width: 30px;
+	height: 26px;
+	background:url(img/nav-icon.png) center;
+	display: inline-block;
+	margin: 50px 0 0 50px;
+}
+
+/* end nav */
+
+h2.sec{
+	font-family: 'Playfair Display', serif;
+	font-size: 200%;
+	font-weight: 700;
+	color: #2C2C2C;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.left-col p{
+	font-family: 'Raleway', serif;
+	color: #2C2C2C;
+	font-size: 140%;
+	line-height: 180%;
+	text-align: justify;
+	letter-spacing: 5px;
+	text-decoration: none!important;
+}
+.left-col p:hover{
+
+}
+.subsidebar p{
+	font-family: 'Raleway', serif;
+	color: #000000;
+	font-size: 140%;
+	line-height: 180%;
+	text-align: center;
+	letter-spacing: 5px;
+	text-decoration: none;
+}
+.emailme a:hover{
+	cursor: pointer;
+	color: #FF8C00;
+	font-weight: bold;
+}
+a:-webkit-any-link {
+    color: #000000;
+    text-decoration: none;
+    cursor: auto;
+}		
+
+
+.item img{
+	text-align: center;
+	max-height:100vh;
+	height: auto;
+	width: auto;
+	}
+.sidebar img{
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+.intro{
+	height: 100%;
+	width:100%;
+	margin: auto;
+	background: url('img/background.jpg') no-repeat 50% 50%;
+	background-size: cover;
+	display: table;
+	top: 0;
+
+}
+.intro .inner{
+	display: table-cell;
+	vertical-align: bottom;
+	width: 100%;
+	max-width: none;
+}
+.content{
+	max-width: 600px;
+	margin: auto;
+}
+.content h1{
+	font-family: 'Playfair Display', serif;
+	font-size: 300%;
+	font-weight: 700 bold;
+	color: #FF8C00;
+	text-align: left;
+	padding: 2%;
+	text-shadow: 100px 100px 250px #FF8C00;
+}
+.content p{
+	color: 	#FF8C00;
+	font-weight: bold;
+	font-size: 200%;
+	text-shadow: 0px 0px 250px #000;
+	text-align: right;
+}
+.inner{
+	max-width: 600%;
+	margin:auto;
+	font-size: 140%;
+	line-height: 1.6;
+	padding: 10px;
+}
+
+.carousel-inner > .item > img{
+	margin: auto;
+}
+
+.left-col{
+	width: 60%;
+	float: left;
+	margin: 4% 0 4% 4%;
+
+}
+.sidebar{
+	width: 26%;
+	float: left;
+	margin: 4%;
+
+}
+
+.totop{
+	margin: 4% 20% 4% 4%;
+	text-decoration: none;
+	float: right;
+}
+.totop:hover{
+	color: #FF8C00;
+	font-weight: bold;
+}
+.clearfix{
+	clear: both;
+	height: 3%;
+}
+.parallax{
+	background: url(img/parallax.jpg) repeat fixed 100%;
+	opacity: 0.8;
+
+}
+.parallax-inner{
+	padding-top: 10%;
+}
+.social{
+	list-style-type: none;
+	text-align: center;
+}
+.social li{
+	display: inline;
+}
+.social i{
+	font-size: 270%;
+	margin: 1% 5% 7% 4%;
+	color: #2C2C2C;
+}
+.social i:hover{
+	color: #FF8C00;
+	font-weight: bold;
+}
+
+footer.second{
+	background-color: #2C2C2C;
+	padding: 3%;
+}
+footer.second p{
+	font-family: 'Raleway', serif;
+	color: #fff;
+	text-align: center;
+	font-size: 150%;
+	
+}
+
+/* FOR SMALL SCREEN */
+@media screen and (max-width: 768px){
+	#menu-icon{
+		margin: 26px 0 0 26px;
+	}
+	nav ul, nav:active ul{
+		padding: 8px 0;
+		left: 23px;
+		top: 34px;
+		width: 50%;
+	}
+	.inner{
+		font-size: 120%;
+	}
+	.content h1{
+		font-size: 180%;
+	}
+	p{
+		font-size: 120%;
+	}
+	h2{
+		font-size: 160%;
+	}
+	.left-col{
+		width: 96%;
+		margin: 0 0 3% 0;
+		padding: 0 2%;
+	}
+	.sidebar{
+		width: 96%;
+		margin: 0 auto;
+	}
+	img{
+		padding: 2%;
+	}
+	/*.one-third-port{
+		width: 96%;
+		margin: 0 auto;
+		padding: 0;
+	}*/
+	.break{
+		display: block;
+	}
+	.parallax{
+		display: none;
+	}
+	.social i{
+		font-size: 170%;
+	}
+}
